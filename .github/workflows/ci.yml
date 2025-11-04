@@ -70,7 +70,7 @@ jobs:
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
         with:
           args: >
-            -Dsonar.projectKey=notes-app-express # GANTI DENGAN PROJECT KEY ANDA
+            -Dsonar.projectKey=sesi31
             -Dsonar.sources=.
             -Dsonar.tests=src/tests
             -Dsonar.test.inclusions=**/*.test.js
