@@ -22,5 +22,6 @@ module.exports = [
     },
 	"globals": {
     	"__ENV": "readonly"
+	}
   })
 ];
