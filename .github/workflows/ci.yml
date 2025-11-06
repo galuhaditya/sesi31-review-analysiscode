@@ -98,7 +98,4 @@ jobs:
         run: sleep 10
 
       - name: Run k6 Smoke Test
-        uses: k6io/k6-action@v0.2.0
-        with:
-          filename: loadtest/script.js
-#
+        run: docker run --rm --network host -e BASE_URL=http://localhost:3000 -v ${{ github.workspace }}:/work -w /work grafana/k6:latest run loadtest/script.js
