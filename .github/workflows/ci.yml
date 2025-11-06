@@ -101,3 +101,4 @@ jobs:
         uses: k6io/k6-action@v0.2.0
         with:
           filename: loadtest/script.js
+#
